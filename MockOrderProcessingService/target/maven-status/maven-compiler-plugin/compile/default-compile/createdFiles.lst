@@ -1,0 +1,6 @@
+com\lavalliere\daniel\mockitojunit\orderprocessingservice\dao\com\lavalliere\daniel\mockitojunit\orderprocessingservice\OrderDAOImpl.class
+com\lavalliere\daniel\mockitojunit\orderprocessingservice\dto\Order.class
+com\lavalliere\daniel\mockitojunit\orderprocessingservice\bo\OrderBO.class
+com\lavalliere\daniel\mockitojunit\orderprocessingservice\bo\OrderBOImpl.class
+com\lavalliere\daniel\mockitojunit\orderprocessingservice\bo\exception\BOException.class
+com\lavalliere\daniel\mockitojunit\orderprocessingservice\dao\OrderDAO.class
