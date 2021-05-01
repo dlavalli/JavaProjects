@@ -25,16 +25,20 @@ public class CalculatorImplTest {
 
 	}
 
+	// An example of parameterized Junit sample using a static method
+	// @Parameters is what caused the multiple iterations on the provided data sampels
 	@Parameters
 	public static Collection<Integer[]> data() {
+		// Convert a 2 dimensional array to a list of 1 dimensional array
+		// The valules match the order of the parameters of the constructor
 		return Arrays.asList(new Integer[][] { { -1, 2, 1 }, { 1, 2, 3}, { 6, 7, 13 } });
 	}
 
 	@Test
 	public void addShouldReturnAResult() {
 		Calculator c = new CalculatorImpl();
-		int result = c.add(num1, num2);
-		assertEquals(expectedResult, result);
+		int result = c.add(num1, num2);   		// num1, num2 comes from data()
+		assertEquals(expectedResult, result);	// expectedResult comes from @Parameters annotation
 	}
 
 }
