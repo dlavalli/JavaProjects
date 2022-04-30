@@ -39,7 +39,7 @@ public class SupplierExample {
         };
 
         //Replace orderFetcher2 with orderFetcher1 to run the Anonymous Class implementation
-        CompletableFuture <Integer> cf1 = CompletableFuture.supplyAsync(orderFetcher2,executor);
+        CompletableFuture <Integer> cf1 = CompletableFuture.supplyAsync(orderFetcher2,e xecutor);
         System.out.println(cf1.get());  // Not normal way of doing this, you would normally use a Consumer instead
         sleep(900);
         executor.shutdown();
