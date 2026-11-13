@@ -20,7 +20,7 @@ NOTE: The  --p option must come before the -m option
 ```
 <br>
 
-- To run the main class from the unnamed module (you have to tell it where to find your modules with --add-modules), do:
+- To run the main class from the unnamed module (you have to tell it where to find your modules with --add-modules to add them as additional root modules), do:
 ```
 java -cp .\jpms.crawler.unnamed.module\target\jpms.crawler.unnamed.module-1.0-SNAPSHOT.jar -p modules --add-modules jpms.indexer.module,jpms.downloader.module,jpms.util.module com.lavalliere.daniel.jpms.crawler.Crawler
 ```
