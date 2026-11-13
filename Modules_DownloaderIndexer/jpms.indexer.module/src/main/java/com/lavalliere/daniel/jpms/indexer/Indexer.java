@@ -1,5 +1,7 @@
 package com.lavalliere.daniel.jpms.indexer;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import com.lavalliere.daniel.jpms.downloader.Downloader;
 
 public class Indexer {
@@ -10,7 +12,13 @@ public class Indexer {
 
     public void htmlIndex(String htmlPage) {
         System.out.println("Indexing html...");
-        System.out.println(htmlPage);
+        // System.out.println(htmlPage);
+        System.out.println("The html page name is: " + getTitle(htmlPage));
+    }
+
+    private String getTitle(String htmlPage) {
+        Document document = Jsoup.parse(htmlPage);
+        return document.title();
     }
 
     static void main(String[] args) {

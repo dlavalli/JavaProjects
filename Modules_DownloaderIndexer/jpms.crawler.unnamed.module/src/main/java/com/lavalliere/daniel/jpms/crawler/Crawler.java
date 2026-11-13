@@ -8,6 +8,6 @@ public class Crawler {
         String url = "http://httpforever.com";
         String htmlPage = (new Downloader()).download(url);
         new Indexer().htmlIndex(htmlPage);
-        System.out.println(htmlPage);
+        // System.out.println(htmlPage);
     }
 }

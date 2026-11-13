@@ -9,20 +9,33 @@
 
 - To manually compile do:
 ```
+# Compile without automatic module
 javac -d modules --module-source-path "./*/src/main/java" --module jpms.util.module,jpms.downloader.module,jpms.indexer.module
+
+# Compile with automatic module
+javac -d modules --module-source-path "./*/src/main/java" --module jpms.util.module,jpms.downloader.module,jpms.indexer.module -p C:\Users\dlava\.m2\repository\org\jsoup\jsoup\1.24.1\jsoup-1.24.1.jar
 ```
 <br> 
 
 - To then run the indexer's main class, do:
 ```
+# Run without automatic module
 java -p modules -m jpms.indexer.module/com.lavalliere.daniel.jpms.indexer.Indexer
-NOTE: The  --p option must come before the -m option
+
+# Run with automatic module
+java -p "modules;C:\Users\dlava\.m2\repository\org\jsoup\jsoup\1.24.1\jsoup-1.24.1.jar" -m jpms.indexer.module/com.lavalliere.daniel.jpms.indexer.Indexer
+
+NOTE: The  -p option must come before the -m option
 ```
 <br>
 
-- To run the main class from the unnamed module (you have to tell it where to find your modules with --add-modules to add them as additional root modules. Note you could also specify --add-modules ALL-MODULE-PATH for add all observable modules as root modules), do:
+- To run the main class from the unnamed module (you have to tell it where to find your modules with --add-modules to add them as additional root modules. Note you could also specify --add-modules ALL-MODULE-PATH for add all observable modules as root modules of the modules graph), do:
 ```
+# Run without automatic module
 java -cp .\jpms.crawler.unnamed.module\target\jpms.crawler.unnamed.module-1.0-SNAPSHOT.jar -p modules --add-modules jpms.indexer.module,jpms.downloader.module,jpms.util.module com.lavalliere.daniel.jpms.crawler.Crawler
+
+# Run with automatic module
+java -cp .\jpms.crawler.unnamed.module\target\jpms.crawler.unnamed.module-1.0-SNAPSHOT.jar -p "modules;C:\Users\dlava\.m2\repository\org\jsoup\jsoup\1.24.1\jsoup-1.24.1.jar" --add-modules jpms.indexer.module,jpms.downloader.module,jpms.util.module com.lavalliere.daniel.jpms.crawler.Crawler
 ```
 
 <br>

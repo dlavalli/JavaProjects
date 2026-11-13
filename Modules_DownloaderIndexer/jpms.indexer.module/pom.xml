@@ -23,6 +23,13 @@
             <artifactId>jpms.downloader.module</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.24.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>
