@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/com.lavalliere.daniel.jpms.module.downloader/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.lavalliere.daniel.jpms.module.indexer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/com.lavalliere.daniel.jpms.module.indexer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpms.crawler.unnamed.module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jpms.crawler.unnamed.module/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpms.downloader.module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpms.downloader.module/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpms.indexer.module/src/main/java" charset="UTF-8" />

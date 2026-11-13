@@ -19,8 +19,4 @@ public class Downloader {
 
         return htmlPage;
     }
-
-    public static void main(String args[]) {
-
-    }
 }

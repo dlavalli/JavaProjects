@@ -12,6 +12,7 @@
         <module>jpms.downloader.module</module>
         <module>jpms.indexer.module</module>
         <module>jpms.util.module</module>
+        <module>jpms.crawler.unnamed.module</module>
     </modules>
 
     <properties>
