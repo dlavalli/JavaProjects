@@ -9,9 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>downloader.module</module>
-        <module>indexer.module</module>
-        <module>util.module</module>
+        <module>jpms.downloader.module</module>
+        <module>jpms.indexer.module</module>
+        <module>jpms.util.module</module>
     </modules>
 
     <properties>

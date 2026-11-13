@@ -8,13 +8,13 @@
 
 - To manually compile do: 
 ```
-javac -d modules --module-source-path "./*/src/main/java" --module util.module,downloader.module,indexer.module
+javac -d modules --module-source-path "./*/src/main/java" --module jpms.util.module,jpms.downloader.module,jpms.indexer.module
 ```
 <br> 
 
 - To then run do:
 ```
-java -p modules -m indexer.module/com.lavalliere.daniel.jpms.indexer.Indexer
+java -p modules -m jpms.indexer.module/com.lavalliere.daniel.jpms.indexer.Indexer
 NOTE: The  --p option must come before the -m option
 ```
 - To manually create a module jar, store it under lib/downloader.jar using the compiled module under out/com.semanticsquare.downloader, do
